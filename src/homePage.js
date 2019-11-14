@@ -5,20 +5,21 @@ let listadoDePeliculas = movies.movies.map(function (movie){
 }).sort().join('\n\n')
 
 
-let home = `Bienvenidos a DH Movies el mejor sitio para encontrar las mejores
-películas, incluso mucho mejor que Netflix, Cuevana y PopCorn.
+let home = `<h1>Bienvenidos a DH Movies</h1>
+<h3>El mejor sitio para encontrar las mejores
+películas, incluso mucho mejor que Netflix, Cuevana y PopCorn.</h3>
 
-Total de películas en cartelera: ${movies.total_movies}
+<h5>Total de películas en cartelera: ${movies.total_movies}
 
 Listados de películas:
-${listadoDePeliculas}
+${listadoDePeliculas}</h5>
 
-Recordá que podés visitar las secciones:
+<h7>Recordá que podés visitar las secciones:
 /enCartelera
 /masVotadas
 /sucursales
 /contacto
-/preguntasFrecuentes
+/preguntasFrecuentes</h7>
 `
 
 module.exports = home

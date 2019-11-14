@@ -1,4 +1,6 @@
 const home = require('./src/homePage.js');
+const enCartelera = require('./src/enCartelera.js');
+const masVotadas = require('./src/masVotadas.js');
 
 let route = function(req, res){
     switch (req.url){
@@ -6,10 +8,10 @@ let route = function(req, res){
 			res.end(home);
 			break;
 		case '/enCartelera':
-			res.end('En cartelera');
+			res.end(enCartelera);
 			break;
 		case '/masVotadas':
-			res.end('Más Votadas');
+			res.end(masVotadas);
 			break;
 		case '/sucursales':
 			res.end('Sucursales');
