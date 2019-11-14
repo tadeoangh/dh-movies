@@ -1,6 +1,10 @@
 const home = require('./src/homePage.js');
 const enCartelera = require('./src/enCartelera.js');
 const masVotadas = require('./src/masVotadas.js');
+const sucursales = require('./src/sucursales.js');
+const contacto = require('./src/contacto.js');
+const preguntasFrecuentes = require('./src/preguntasFrecuentes.js');
+
 
 let route = function(req, res){
     switch (req.url){
@@ -14,13 +18,13 @@ let route = function(req, res){
 			res.end(masVotadas);
 			break;
 		case '/sucursales':
-			res.end('Sucursales');
+			res.end(sucursales);
 			break;
 		case '/contacto':
-			res.end('Contacto');
+			res.end(contacto);
 			break;
 		case '/preguntasFrecuentes':
-			res.end('Preguntas Frecuentes');
+			res.end(preguntasFrecuentes);
 			break;
 		default:
 			res.end('404 not found')
