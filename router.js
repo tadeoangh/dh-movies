@@ -1,7 +1,9 @@
+const home = require('./src/homePage.js');
+
 let route = function(req, res){
     switch (req.url){
 		case '/':
-			res.end('Home');
+			res.end(home);
 			break;
 		case '/enCartelera':
 			res.end('En cartelera');
