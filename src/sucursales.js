@@ -1,17 +1,11 @@
 let theaters = require('../data/theaters.json');
-
-let listaSalas = theaters.theaters.map(function (sala){
-        let cadaSala = [sala.name, '\n\nDirección:', sala.address, '\n\nDescripción:', sala.description]
-        cadaSala.join('');
-        return cadaSala
-}).sort().join('\n\n')
-
+let helpers = require('../customFunctions');
 
 let sucursales = `Nuestras Salas
 Total de salas: ${theaters.total_theaters}
 
 Listados de salas:
-${listaSalas}
+${helpers.listaSalas}
 
 Recordá que podés visitar las secciones:
 /

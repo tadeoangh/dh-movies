@@ -27,7 +27,7 @@ let route = function(req, res){
 			res.end(preguntasFrecuentes);
 			break;
 		default:
-			res.end('404 not found')
+			res.end('404 not found\n\nDon`t panic. We are working on it');
 	}
 }
 
