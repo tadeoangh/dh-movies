@@ -4,7 +4,7 @@
   "description": "",
   "main": "app_hard.js",
   "scripts": {
-    "start": "node app_hard.js",
+    "start": "nodemon app_hard.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "http": "0.0.0"
+    "http": "0.0.0",
+    "nodemon": "^1.19.4"
   }
 }

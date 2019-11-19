@@ -1,7 +1,7 @@
 let movies = require('../data/movies.json');
 let helpers = require('../customFunctions');
 
-let home = `Bienvenidos a DH Movies
+let home = `Bienvenidos a DH Movies!!
 El mejor sitio para encontrar las mejores
 películas, incluso mucho mejor que Netflix, Cuevana y PopCorn.
 
